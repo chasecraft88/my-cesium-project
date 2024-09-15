@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive 3D World</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+  <div id="quiz-popup" class="ui-box">
+    <h2>Quiz</h2>
+    <form id="quizForm">
+      <label for="question1">Question 1: What is the capital of France?</label>
+      <input type="text" id="question1" name="question1" autocomplete="off"><br><br>
+      <label for="question2">Question 2: Who wrote 'Whispers from Within'?</label>
+      <input type="text" id="question2" name="question2" autocomplete="off"><br><br>
+      <input type="submit" value="Submit Quiz" class="button">
+    </form>
+  </div>
+  <div id="story-popup" class="ui-box">
+    <h2>Interactive Story</h2>
+    <p id="storyContent">Welcome to the interactive story section! Explore the environment to uncover more stories and interactive content.</p>
+  </div>
+  <div id="riddle-popup" class="ui-box">
+    <h2>Riddle</h2>
+    <p id="riddleContent">Solve this riddle to continue: What has keys but can't open locks?</p>
+    <input type="text" id="riddleAnswer" name="riddleAnswer" autocomplete="off">
+    <button id="riddleSubmit" class="button">Submit Answer</button>
+  </div>
+  <div id="loadingOverlay">
+    <h1>Loading...</h1>
+  </div>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.88/Build/Cesium/Cesium.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
