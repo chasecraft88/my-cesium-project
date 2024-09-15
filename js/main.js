@@ -1,5 +1,5 @@
-Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5NDY3N2IwOC05NGIzLTRiMzYtOTZhMS02ZDk4YTliNjM5MzIiLCJpZCI6MjQxNjg3LCJpYXQiOjE3MjYzNTYyNDB9.FAFLAvtOGYBFNai5-0d_5BgY6CFCaWTQhGZ__h5V1J8';
-
+require('dotenv').config();
+Cesium.Ion.defaultAccessToken = process.env.CESIUM_ACCESS_TOKEN;
 var viewer = new Cesium.Viewer('cesiumContainer', {
   imageryProviderViewModel: Cesium.createWorldImagery(),
   selectedImageryProviderViewModel: Cesium.createWorldImagery(),
